@@ -1,0 +1,132 @@
+/* HeaderStyles.css */
+.header {
+    background: linear-gradient(135deg, #010233, #0056b3); /* Gradient background */
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s;
+}
+
+.header:hover {
+    background: linear-gradient(135deg, #010233, #004494); /* Darker gradient on hover */
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 2rem; /* Increased logo size */
+    font-weight: 700;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.logo:hover {
+    color: #ffd700; /* Gold color on hover */
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 2rem; /* Set a specific gap between items (adjust as needed) */
+    margin-left: auto; /* Pushes the nav-links to the right */
+}
+
+.nav-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1rem; /* Slightly larger font size */
+    font-weight: 500;
+    padding: 0.5rem 0;
+    transition: color 0.3s, transform 0.3s;
+    position: relative;
+}
+
+.nav-link:hover {
+    color: #ffd700; /* Gold color on hover */
+    transform: translateY(-2px); /* Lift effect */
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 2rem;
+}
+
+.login-btn,
+.signup-btn {
+    padding: 0.6rem 1.2rem; /* Vertical and horizontal padding */
+    border-radius: 4px; /* Rounded corners */
+    font-weight: 600; /* Bold text */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transitions for background and color */
+    text-decoration: none; /* Remove underline from links */
+    cursor: pointer; /* Pointer cursor on hover */
+    display: inline-block; /* Ensure buttons behave like block elements */
+}
+
+/* Login Button Styles */
+.login-btn {
+    background-color: transparent; /* No background color initially */
+    color: #ffffff; /* White text */
+    /* Border color */
+}
+
+.login-btn:hover {
+    background-color: #ffd700; /* Gold background on hover */
+    color: #000000; /* Black text on hover */
+}
+
+/* Sign Up Button Styles */
+.signup-btn {
+    background-color: transparent; /* Gold background */
+    color: #ffffff; /* White text */
+    border: none; /* No border */
+}
+
+.signup-btn:hover {
+    background-color: #e4e012; /* Darker background on hover */
+    color: #000407; /* Black text on hover */
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-container {
+        flex-wrap: wrap;
+    }
+
+    .nav-links {
+        margin-top: 1rem;
+        width: 100%;
+        justify-content: center; /* Center nav links on small screens */
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .auth-buttons {
+        width: 100%;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+}
+.nav-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1rem; /* Slightly larger font size */
+    font-weight: 500;
+    padding: 0.5rem 0;
+    margin-right: 2rem; /* Add right margin to create space */
+    transition: color 0.3s, transform 0.3s;
+    position: relative;
+}
+
+.nav-link:last-child {
+    margin-right: 0; /* Remove margin from the last link */
+}

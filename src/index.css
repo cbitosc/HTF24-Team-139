@@ -1,0 +1,11 @@
+/* src/index.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  min-height: calc(100vh - 60px); /* Adjust according to header/footer height */
+}

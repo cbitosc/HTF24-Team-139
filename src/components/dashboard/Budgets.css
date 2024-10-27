@@ -1,0 +1,210 @@
+/* Budget Page Specific Styles */
+.bdg-page-wrapper {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  .bdg-main-content {
+    flex: 1;
+    padding: 2rem;
+    margin-left: 240px; /* Adjust based on your sidebar width */
+  }
+  
+  .bdg-header-container {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .bdg-page-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1a1a1a;
+  }
+  
+  .bdg-new-button {
+    background-color: #3b82f6;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: background-color 0.3s;
+  }
+  
+  .bdg-new-button:hover {
+    background-color: #2563eb;
+  }
+  
+  .bdg-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem 0;
+  }
+  
+  .bdg-card {
+    background-color: #fff;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+  }
+  
+  .bdg-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+  }
+  
+  .bdg-card-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  .bdg-card-category {
+    color: #6b7280;
+    text-transform: capitalize;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+  }
+  
+  .bdg-delete-btn {
+    background: none;
+    border: none;
+    color: #9ca3af;
+    cursor: pointer;
+    padding: 0.25rem;
+    transition: color 0.3s;
+  }
+  
+  .bdg-delete-btn:hover {
+    color: #ef4444;
+  }
+  
+  .bdg-card-details {
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+    display: grid;
+    gap: 0.5rem;
+  }
+  
+  .bdg-progress-container {
+    background-color: #e5e7eb;
+    border-radius: 0.25rem;
+    height: 0.625rem;
+    width: 100%;
+    overflow: hidden;
+    margin: 0.75rem 0;
+  }
+  
+  .bdg-progress-bar {
+    height: 100%;
+    border-radius: 0.25rem;
+    transition: width 0.3s ease;
+  }
+  
+  .bdg-progress-text {
+    text-align: right;
+    font-size: 0.875rem;
+    color: #4b5563;
+  }
+  
+  .bdg-alert {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #ef4444;
+    font-size: 0.875rem;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    background-color: #fee2e2;
+    border-radius: 0.375rem;
+  }
+  
+  /* Modal Styles */
+  .bdg-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 50;
+  }
+  
+  .bdg-modal {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 28rem;
+    margin: 1rem;
+  }
+  
+  .bdg-modal-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: #1a1a1a;
+  }
+  
+  .bdg-form-field {
+    width: 100%;
+    padding: 0.625rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 0.875rem;
+  }
+  
+  .bdg-form-field:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.1);
+  }
+  
+  .bdg-button-group {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+  
+  .bdg-submit-btn {
+    flex: 1;
+    padding: 0.625rem 1rem;
+    background-color: #3b82f6;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .bdg-submit-btn:hover {
+    background-color: #2563eb;
+  }
+  
+  .bdg-cancel-btn {
+    flex: 1;
+    padding: 0.625rem 1rem;
+    background-color: #e5e7eb;
+    color: #374151;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .bdg-cancel-btn:hover {
+    background-color: #d1d5db;
+  }
