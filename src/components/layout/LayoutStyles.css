@@ -1,0 +1,45 @@
+/* src/components/layout/LayoutStyles.css */
+
+/* Footer Styles */
+.footer {
+    padding: 20px 0; /* More padding for a spacious look */
+    text-align: center;
+    background-color: #010649; /* Same color as header */
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Add shadow for separation */
+}
+
+.footer-content {
+    max-width: 1200px; /* Limit the width for better alignment */
+    margin: 0 auto; /* Center footer content */
+}
+
+.social-links {
+    margin-top: 10px; /* Space between text and links */
+}
+
+.social-links a {
+    color: #ffffff; /* White color for links */
+    text-decoration: none;
+    margin: 0 10px; /* Space between icons */
+    transition: color 0.3s ease; /* Smooth transition */
+}
+
+.social-links a:hover {
+    color: #0e0224; /* Change to gold on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer {
+        padding: 15px 0; /* Less padding on smaller screens */
+    }
+
+    .social-links {
+        flex-direction: column; /* Stack social links on smaller screens */
+        align-items: center; /* Center align items */
+    }
+}

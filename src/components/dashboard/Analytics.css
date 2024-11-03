@@ -1,0 +1,125 @@
+.analytics-container {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+  }
+  
+  /* Assuming your sidebar width is 250px - adjust this value to match your sidebar width */
+  .analytics-content {
+    flex: 1;
+    margin-left: 250px; /* Match this to your sidebar width */
+    padding: 24px;
+    background-color: #f5f5f5;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  
+  .analytics-header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 24px;
+    color: #333;
+  }
+  
+  .summary-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-bottom: 24px;
+  }
+  
+  .summary-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .summary-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+  }
+  
+  .summary-card-title {
+    font-size: 14px;
+    font-weight: 500;
+    color: #666;
+  }
+  
+  .summary-card-amount {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .amount-income {
+    color: #10b981;
+  }
+  
+  .amount-expense {
+    color: #ef4444;
+  }
+  
+  .amount-balance {
+    color: #3b82f6;
+  }
+  
+  .icon-income {
+    color: #10b981;
+  }
+  
+  .icon-expense {
+    color: #ef4444;
+  }
+  
+  .icon-balance {
+    color: #3b82f6;
+  }
+  
+  .charts-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  
+  .chart-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .chart-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .chart-container {
+    height: 400px;
+    width: 100%;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 1024px) {
+    .summary-cards {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .analytics-content {
+      margin-left: 0; /* For mobile, assuming sidebar becomes a drawer or is hidden */
+      padding: 16px;
+    }
+  
+    .summary-cards {
+      grid-template-columns: 1fr;
+    }
+  
+    .chart-container {
+      height: 300px;
+    }
+  }
